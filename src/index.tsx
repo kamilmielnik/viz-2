@@ -1,7 +1,8 @@
 import type {
   CreateCustomVisualization,
+  CustomStaticVisualizationProps,
   CustomVisualizationProps,
-} from "@metabase/custom-viz";
+} from '@metabase/custom-viz';
 
 type Settings = {
   threshold?: number;
@@ -95,12 +96,12 @@ const VisualizationComponent = (props: CustomVisualizationProps<Settings>) => {
 };
 
 const StaticVisualizationComponent = (
-  props: CustomStaticVisualizationProps<ThumbsVizSettings>,
+  props: CustomStaticVisualizationProps<Settings>,
 ) => {
   const width = 540;
   const height = 360;
   const { series, settings } = props;
-  const { threshold } = settings;
+  const { threshold = 0 } = settings;
   const value = series[0].data.rows[0][0];
 
   if (typeof value !== "number" || typeof threshold !== "number") {

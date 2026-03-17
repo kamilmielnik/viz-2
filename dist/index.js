@@ -54,7 +54,7 @@ var { jsx: e, jsxs: t, Fragment: n } = window.__METABASE_VIZ_API__.jsxRuntime, r
 		children: s >= o ? "👍" : "👎"
 	});
 }, a = (t) => {
-	let { series: n, settings: r } = t, { threshold: i } = r, a = n[0].data.rows[0][0];
+	let { series: n, settings: r } = t, { threshold: i = 0 } = r, a = n[0].data.rows[0][0];
 	if (typeof a != "number" || typeof i != "number") throw Error("Value and threshold need to be numbers");
 	return /* @__PURE__ */ e("div", {
 		style: {
