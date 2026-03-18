@@ -111,8 +111,8 @@ const StaticVisualizationComponent = (props: CustomStaticVisualizationProps<Sett
       /* https://icons.getbootstrap.com/icons/hand-thumbs-up/ */
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="10rem"
-        height="10rem"
+        width="16"
+        height="16"
         fill="currentColor"
         viewBox="0 0 16 16"
       >
@@ -122,8 +122,8 @@ const StaticVisualizationComponent = (props: CustomStaticVisualizationProps<Sett
       /* https://icons.getbootstrap.com/icons/hand-thumbs-down/ */
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="10rem"
-        height="10rem"
+        width="16"
+        height="16"
         fill="currentColor"
         viewBox="0 0 16 16"
       >
